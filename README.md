@@ -1,4 +1,2 @@
 # nodeStaticServer
-# nodeStaticServer
-# nodeStaticServer
-# nodeStaticServer
+# nodejs nginx static server
