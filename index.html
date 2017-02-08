@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <button onclick="myClick()">点击</button>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script>
+            function myClick(){
+                $.ajax({
+                    url:'/data/deta.json',
+                    dataType:'json',
+                    success:function(data){
+                        console.log(data);
+                    },
+                    error:function(XMLHttpRequest, textStatus, errorThrown) {
+                        console.log(XMLHttpRequest.status);
+                        console.log(XMLHttpRequest.readyState);
+                        console.log(textStatus);
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
